@@ -1,14 +1,12 @@
 {
-  "name": "functions-test",
+  "name": "functions-default",
   "version": "1.0.0",
-  "scripts": {
-    "build-functions": "netlify-lambda build lambda",
-    "start-lambda": "netlify-lambda serve lambda",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "",
-  "license": "ISC",
   "dependencies": {
-    "netlify-lambda": "^2.0.15"
+    "netlify-lambda": "^1.0.2"
+  },
+  "scripts": {
+    "prod": "npm run build:lambda",
+    "start:lambda": "netlify-lambda serve functions",
+    "build:lambda": "netlify-lambda build functions"
   }
 }
